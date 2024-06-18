@@ -1,5 +1,5 @@
 {
-    "name": "treegenerator",
+    "name": "@douxx/treegenerator",
     "version": "1.0.0",
     "description": "A tool to generate tree structures of directories.",
     "main": "index.js",
