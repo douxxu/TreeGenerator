@@ -23,8 +23,7 @@
     },
     "homepage": "https://github.com/douxxu/TreeGenerator",
     "bin": {
-        "tree": "./TreeGenerator.js",
-        "tg": "./TreeGenerator.js"
+        "tree": "./TreeGenerator.js"
     },
     "dependencies": {
         "blessed": "*",
