@@ -27,7 +27,7 @@ const blessed = require('blessed');
         process.exit(1);
     }
 
-    const githubLink = 'https://github.com/douxxu/TreeCreator';
+    const githubLink = 'https://github.com/douxxu/TreeGenerator';
 
     function generateTrees(rootPath) {
         console.log(`[GENERATOR] Generating trees for path: ${rootPath}`);
@@ -151,7 +151,7 @@ const blessed = require('blessed');
             left: 'center',
             width: '100%',
             height: 1,
-            content: `TreeCreator @${version} | Path: `.cyan + rootPath,
+            content: `TreeGenerator @${version} | Path: `.cyan + rootPath,
             style: {
                 fg: 'white',
                 bg: 'black'
@@ -185,7 +185,7 @@ const blessed = require('blessed');
 
         console.time('screenKeyBinding');
         screen.key(['C-q'], function (ch, key) {
-            console.log('Thanks for using TreeCreator!');
+            console.log('Thanks for using TreeGenerator!');
             return process.exit(0);
         });
         console.timeEnd('screenKeyBinding');
@@ -194,7 +194,7 @@ const blessed = require('blessed');
         screen.key(['C-c'], async function (ch, key) {
             try {
                 let contentToCopy = currentDisplayMode === 'tree' ? tree.replace(/\u001b\[.*?m/g, '') : jsonTree;
-                contentToCopy += `\n\nMade with TreeCreator@${version}`;
+                contentToCopy += `\n\nMade with TreeGenerator@${version}`;
                 await clipboardy.write(contentToCopy);
                 bar.setContent('Content copied to clipboard.');
                 screen.render();
