@@ -150,7 +150,7 @@ const blessed = require('blessed');
             top: 0,
             left: 'center',
             width: '100%',
-            height: 1, // Reduced height for version display
+            height: 1,
             content: `TreeGenerator @${version} | Path: `.cyan + rootPath,
             style: {
                 fg: 'white',
@@ -233,10 +233,10 @@ const blessed = require('blessed');
         console.log('[SCREEN] Screen rendered.');
         function createBox(content) {
             const box = blessed.box({
-                top: 1, // Start box below the pathBox
+                top: 1,
                 left: 'left',
                 width: '100%',
-                height: '89%', // Adjusted height to fit below pathBox
+                height: '89%',
                 content,
                 tags: true,
                 scrollable: true,
@@ -250,17 +250,17 @@ const blessed = require('blessed');
                         inverse: true
                     }
                 },
-                keys: true, // Enable key events for the box
-                mouse: true // Enable mouse events for the box
+                keys: true, 
+                mouse: true 
             });
         
-            // Handle key events for scrolling
+
             box.key(['up', 'down', 'left', 'right', 'pageup', 'pagedown', 'home', 'end'], function(ch, key) {
                 box.scroll(ch);
                 screen.render();
             });
         
-            // Handle mouse events for scrolling
+
             box.on('mouse', function(event) {
                 if (event.action === 'wheelup' || event.action === 'wheeldown') {
                     box.scroll(event.action === 'wheelup' ? -1 : 1);
