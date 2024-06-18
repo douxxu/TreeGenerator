@@ -1,5 +1,5 @@
 {
-    "name": "treecreator",
+    "name": "treegenerator",
     "version": "1.0.0",
     "description": "A tool to create tree structures of directories.",
     "main": "index.js",
@@ -19,12 +19,12 @@
     "author": "Douxx",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/douxxu/TreeCreator/issues"
+        "url": "https://github.com/douxxu/TreeGenerator/issues"
     },
-    "homepage": "https://github.com/douxxu/TreeCreator",
+    "homepage": "https://github.com/douxxu/TreeGenerator",
     "bin": {
-        "tree": "./src/TreeCreator.js",
-        "tg": "./src/TreeCreator.js"
+        "tree": "./src/TreeGenerator.js",
+        "tg": "./src/TreeGenerator.js"
     },
     "dependencies": {
         "blessed": "*",
