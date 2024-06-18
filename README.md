@@ -1,4 +1,4 @@
-# ├─TreeGenerator
+# ├TreeGenerator
 
 TreeGenerator is a command-line tool for generating and visualizing directory tree structures in a terminal.
 
