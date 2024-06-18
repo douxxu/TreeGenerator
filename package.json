@@ -4,7 +4,7 @@
     "description": "A tool to generate tree structures of directories.",
     "main": "index.js",
     "scripts": {
-        "start": "node TreeGenerator.js"
+        "start": "node src/TreeGenerator.js"
     },
     "repository": {
         "type": "git",
@@ -23,8 +23,8 @@
     },
     "homepage": "https://github.com/douxxu/TreeGenerator",
     "bin": {
-        "tree": "./TreeGenerator.js",
-        "tg": "./TreeGenerator.js"
+        "tree": "./src/TreeGenerator.js",
+        "tg": "./src/TreeGenerator.js"
     },
     "dependencies": {
         "blessed": "*",
