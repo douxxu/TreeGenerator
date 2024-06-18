@@ -25,12 +25,13 @@ Follow these steps to install TreeCreator:
 2. Open your terminal.
 3. Copy and paste the following command:
    ```
-   npm install -g TreeCreator
+   npm install -g @douxx/treegenerator
    ```
 4. TreeCreator is now installed globally on your system. You can run it using the command:
    ```
    tree <path>
    ```
+
 
 ## ⚙️ Usage
 
