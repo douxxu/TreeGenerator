@@ -102,7 +102,7 @@ const blessed = require('blessed');
         console.time('main');
 
         if (!inputPath) {
-            console.error('[INFO] Usage: node index.js <path>'.red);
+            console.error('[INFO] Usage: tree <path>'.red);
             process.exit(1);
         }
 
