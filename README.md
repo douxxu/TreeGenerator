@@ -39,6 +39,10 @@ To generate a tree for a specific directory, use the following command:
 ```
 tree <path>
 ```
+or
+```
+tg <path>
+```
 
 Replace `<path>` with the absolute or relative path of the directory you want to visualize.
 
