@@ -1,10 +1,10 @@
 {
     "name": "@douxx/treegenerator",
-    "version": "1.0.1",
-    "description": "A tool to generate tree structures of directories.",
+    "version": "1.1.0",
+    "description": "A tool to create tree structures of directories.",
     "main": "index.js",
     "scripts": {
-        "start": "node TreeGenerator.js"
+        "start": "node src/TreeGenerator.js"
     },
     "repository": {
         "type": "git",
@@ -23,7 +23,7 @@
     },
     "homepage": "https://github.com/douxxu/TreeGenerator",
     "bin": {
-        "tree": "./TreeGenerator.js"
+        "tree": "./src/TreeGenerator.js"
     },
     "dependencies": {
         "blessed": "*",
